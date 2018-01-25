@@ -20,8 +20,6 @@ public class FillWidthTextView extends AppCompatTextView {
 
     public FillWidthTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        getTextSize();
-        getCurrentTextColor();
     }
 
     public FillWidthTextView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -42,6 +40,7 @@ public class FillWidthTextView extends AppCompatTextView {
 
         canvas.save();
 
+        // 支持padding
         canvas.clipRect(new Rect(getPaddingLeft(), 0, getWidth() - getPaddingRight(), getHeight()));
 
         int contentWidth = getWidth() - getPaddingLeft() - getPaddingRight();
@@ -59,6 +58,7 @@ public class FillWidthTextView extends AppCompatTextView {
         for (int i = 0; i < text.length(); i++) {
 
             String char2Draw;
+            // 最后如果包含冒号，那么几不需要间距了，直接连在一起绘制
             if (isEndWithColon && i == text.length() - 2) {
                 char2Draw = text.substring(i, i + 2);
                 canvas.drawText(char2Draw, lastX, baseLineY, getPaint());

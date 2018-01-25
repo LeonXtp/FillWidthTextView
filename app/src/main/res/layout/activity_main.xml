@@ -8,28 +8,29 @@
     android:padding="100dp"
     tools:context="com.leonxtp.fillwidthtextview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.leonxtp.library.FillWidthTextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:background="#afa6a6"
-        android:text="姓            名：" />
+        android:text="姓名：" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:background="#afa6a6"
-        android:text="座     次    号：" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <com.leonxtp.library.FillWidthTextView
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
         android:background="#afa6a6"
-        android:text="班 级 排 名：" />
+        android:text="座次号：" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.leonxtp.library.FillWidthTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#afa6a6"
+        android:text="班级排名：" />
+
+    <com.leonxtp.library.FillWidthTextView
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
         android:background="#afa6a6"

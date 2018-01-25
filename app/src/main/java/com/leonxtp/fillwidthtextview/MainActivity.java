@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ((FillWidthTextView) findViewById(R.id.tvName)).setText("张小龙：");
+        ((FillWidthTextView) findViewById(R.id.tvName)).setText("张小龙：");
 
     }
 }
