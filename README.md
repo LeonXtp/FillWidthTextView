@@ -2,7 +2,7 @@
 
 经常会有一些填写表单页面之类的需求，比如像这样：
 
-![难看的TextView](https://github.com/LeonXtp/FillWidthTextView/blob/master/art/textview-before.png)
+![难看的TextView](https://github.com/LeonXtp/FillWidthTextView/blob/master/art/ugly-textview.png)
 
 很难将它们的宽度和间隔调整到一致。
 
