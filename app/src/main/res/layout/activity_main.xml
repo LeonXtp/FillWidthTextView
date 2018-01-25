@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="100dp"
     tools:context="com.leonxtp.fillwidthtextview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.leonxtp.library.FillWidthTextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#afa6a6"
+        android:text="姓名：" />
 
-</android.support.constraint.ConstraintLayout>
+    <com.leonxtp.library.FillWidthTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#afa6a6"
+        android:text="座次号：" />
+
+    <com.leonxtp.library.FillWidthTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#afa6a6"
+        android:text="班级排名：" />
+
+    <com.leonxtp.library.FillWidthTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#afa6a6"
+        android:text="上月区排名：" />
+
+</LinearLayout>

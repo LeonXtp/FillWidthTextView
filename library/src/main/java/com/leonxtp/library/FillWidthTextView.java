@@ -30,7 +30,6 @@ public class FillWidthTextView extends AppCompatTextView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-//        super.onDraw(canvas);
         drawText(canvas);
     }
 
@@ -43,9 +42,9 @@ public class FillWidthTextView extends AppCompatTextView {
 
         canvas.save();
 
-        int contentWidth = getWidth() - getPaddingLeft() - getPaddingRight();
-
         canvas.clipRect(new Rect(getPaddingLeft(), 0, getWidth() - getPaddingRight(), getHeight()));
+
+        int contentWidth = getWidth() - getPaddingLeft() - getPaddingRight();
 
         int baseLineY = getPaddingTop()
                 + (getHeight() - getPaddingTop() - getPaddingBottom()) / 2
